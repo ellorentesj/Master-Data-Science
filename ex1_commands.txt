@@ -1,0 +1,103 @@
+     1	#Quick exercises
+     2	#Exercises 1
+     3	#1. Create a directory "first_dir" in you home folder
+     4	#2. Create an empty file "text_file.txt" inside "first_dir" directory
+     5	#3. Add execute permissions to group users, and write permissions to other users to "text_file.txt"
+     6	#4. Create 3 subdirectories inside "first_dir":"sub1","sub2","text_file"
+     7	#5. Copy the "text_file.txt" file into "sub1" directory
+     8	#6. Move the "text_file.txt" into sub2 under name "text_file.txt.2
+     9	#7. Copy the whole directory "sub1" to "sub3" directory
+    10	#8. Change file name of "first_dir/sub3/text_file.txt" to "first_dir/sub3/text_file.txt.backup"
+    11	#9. Change permissions of "text_file.txt.backup" so that everyone has all permissions
+    12	#10. Move "first_dir/sub3/text_file.txt.backup" to "first_dir" directory as hidden file
+    13	#11. Delete the "sub3" subdirectory
+    
+    14	mkdir first_dir
+    15	ll
+    16	cd first_dir
+    17	touch text_file.txt
+    18	ll
+    19	chmod g+x,o+w text_file.txt
+    20	ll
+    21	mkdir sub1
+    22	mkdir sub2
+    23	mkdir text_file
+    24	cp text_file.txt sub1/
+    25	ll
+    26	cd sub1
+    27	ll
+    28	mv text_file.txt ../sub2/text_file.txt.2
+    29	cd ..
+    30	ll
+    31	cd sub2/ll
+    32	cd sub2
+    33	ll
+    34	cp -r ../sub1 ../sub3
+    35	cd ..
+    36	ll
+    37	cd sub3
+    38	ll
+    39	cd ..
+    40	pwd
+    41	ll
+    42	cd sub1
+    43	ll
+    44	cd ..
+    45	rm -r sub3
+    46	cd sub2
+    47	ll
+    48	cd ..
+    49	cp text_file.txt /sub1
+    50	cp text_file.txt sub1/
+    51	cd sub1/ll
+    52	cd sub1
+    53	ll
+    54	cd ..
+    55	ll
+    56	cp -r sub1 sub3
+    57	ll
+    58	cd sub3
+    59	ll
+    60	mv text_file.txt text_file.txt.backup
+    61	ll
+    62	chmod 777 text_file.txt.backup
+    63	ll
+    64	mv -a text_file.txt.backup ~/first_dir 
+    65	mv --help
+    66	mv text_file.txt.backup ~/first_dir 
+    67	pwd
+    68	cd ..
+    69	ll
+    70	mv text_file.txt.backup .text_file.txt.backup
+    71	ll
+    72	ls -a
+    73	cd ..
+    74	ll
+    75	cd ..
+    76	ll
+    77	cd .
+    78	ll
+    79	cd .
+    80	cd ..
+    81	ll
+    82	cd tmp
+    83	ll
+    84	ls -lta
+    85	cd ..
+    86	cd home
+    87	cd dsc
+    88	ls -lta
+    89	cp .history first_dir/history.txt
+    90	ll
+    91	cd first_dir
+    92	ll
+    93	kwrite history.txt
+    94	kwrite -n history.txt
+    95	cat -n history.txt > history.txt
+    96	kwrite history.txt
+    97	ll
+    98	rm history.txt
+    99	cp -n .history first_dir/history.txt
+   100	cd ..
+   101	cp -n .history first_dir/history.txt
+   102	rm -r sub3
