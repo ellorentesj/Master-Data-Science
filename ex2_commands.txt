@@ -1,0 +1,16 @@
+    1  #Quick exercises
+    2  #Exercises 2
+    3  #1. Go to yor home directory
+    4  #2. Use Text_example.txt to generate a new file with the same content and line numeber at the beginning of each line.
+    5  #3. Generate a new file with twice the content of "Text_example.txt" inside. (one full text content after another)
+    6  #4. Open new shell inside a new terminal tab using block search exexecute again the command where we printed the linux details (hint: it had "release" in the name)
+    7
+    8  pwd
+    9  cd Data/shell
+    10  ll
+    11  cat Text_example.txt
+    12  cat -n Text_example.txt
+    13  cat -n Text_example.txt > file_with_num_lines.txt
+    14  cat file_with_num_lines.txt
+    15  cat Text_example.txt Text_example.txt > twice.txt
+    16  cat twice.txt
