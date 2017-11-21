@@ -1,0 +1,22 @@
+    1  #Quick exercises
+    2  #Exercises 3
+    3  #1. Print first 3 lines of ~/Text_example.txt
+    4  #2. Print content of ~/Text_example.txt except first 2 and last 3 lines.
+    5  #3. Go to Data/shell/ directory and use less to open Finn.txt
+    6  #   a) Locate the lines starting with "The".
+    7  #   b) Locate the lines ending with "works".
+    8  #4. Open ~/Data/opentraveldata/optd_aircraft.csv with less command. Search for "Canada" and then search for "Puma".
+    9  #5. How many lines does ~/Data/opentraveldata/optd_aircraft.cvs file have?
+    10 #6. Use help to find out how to get the list of subdirectories limited to 2 sublevels by using "tree" command.
+    11  
+    12  cat -n Text_example.txt| head -n 3
+    13  cat -n Text_example.txt| head -n -3| tail -n -2
+    14  cat -n Text_example.txt| head -n -3| tail -2
+    15  pwd
+    16  less Finn.txt
+    17  cd ~/Data/opentraveldata
+    18  ls -lrt
+    19  less optd_aircraft.csv
+    20  wc -l optd_aircraft.cvs
+    21  tree -L 2
+    
