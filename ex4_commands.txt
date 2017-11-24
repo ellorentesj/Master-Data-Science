@@ -1,0 +1,10 @@
+    1  #Quick exercises
+    2  #Exercises 4
+    3  #1. Find all files located ONLY inside subdirectories of your home directory which have been modified in last 60 min.
+    4  #2. Fin all empty files inside subdirectories of your home directory which do NOT have read-write-execute permissions given to all users
+    5  #3. Expand previous command to grant these permissions using "ok cmd" option.
+    6     
+    7  find -mindepth 2 -type f -mmin -60
+    8  find -type f -empty ! -perm 777
+    9  find -type f -empty ! -perm 777 -ok chmod 777 {} \;
+ 
