@@ -1,7 +1,6 @@
-#####1. INTRODUCCIÓN#####
+#####1. INTRODUCCIÓN: Dataframe y métodos base de R #####
 
 
-####1.1 Dataframe####
 # Read csv: Función por defecto para leer un csv. Es necesario darle la ruta del fichero, es importante que 
 # esté en la carpeta de RStudio.
 # Nos descargamos por ejemplo el archivo train de kaggle del dataset titanic
@@ -77,9 +76,6 @@ head(mascaraDeMenores) # [1] FALSE FALSE FALSE FALSE FALSE    NA
 mascaraDeMenores[is.na(mascaraDeMenores)] <- F
 menores <- titanic[mascaraDeMenores,]
 head(menores) # de esta manera el dataframe menores ya no tiene valores NA
-
-####1.2 dplyr####
-library("dplyr") # librería para manipular dataframe
 
 # Realizamos selecciones de datos dentro del dataframe:
 # Seleccionamos múltiples filas:
