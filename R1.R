@@ -194,7 +194,7 @@ for (filas in 1:nrow(matriz)){
 # * Partiendo de un dataframe de ejemplo incluído en R (mtcars), realiza lo siguiente:
 #   - Almacena el dataframe en otro con otro nombre midf.
 midf <- data.frame(mtcars)
-midf
+
 #   - Muestra por consola las primeras y las últimas filas del dataframe con las funciones head() y tail()
 head(midf)
 tail(midf)
